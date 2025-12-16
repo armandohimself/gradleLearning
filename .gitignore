@@ -1,0 +1,37 @@
+# --- Gradle ---
+.gradle/
+build/
+**/build/
+
+# Gradle GUI / cache
+gradle-app.setting
+
+# --- IntelliJ / JetBrains ---
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# --- VS Code ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Logs / temp ---
+*.log
+*.tmp
+
+# --- Java ---
+*.class
+
+# --- Env / secrets ---
+.env
+.env.*
+*.local

@@ -1,0 +1,39 @@
+// * EX1 - Hello World
+tasks.register('hello') {
+    doLast {
+        println 'Hello, World!'
+    }
+}
+// cd <path>/<to>/<project>/
+// gradle -q hello
+// -q disables Gradle's output log
+
+// * EX2 - Hello, Groovy Task
+tasks.register('helloV2') {
+    doLast {
+        String name = 'groovy'
+        println "Hello, ${name.toUpperCase()}"
+    }
+}
+
+/*
+* Dev Notes
+---
+
+
+ */
+
+
+ // ! ALERT        (important / risky / breaking)
+// ? QUESTION     (uncertain / investigate / why?)
+// TODO: TASK     (thing to do later)        // tag is "todo" by default
+// * HIGHLIGHT    (important note / key idea)
+// // STRIKEOUT    (commented-out code; shown as “shouldn’t be there”)
+
+/*
+ ! ALERT in multiline (works if better-comments.multilineComments = true)
+ ? QUESTION
+ TODO: TASK
+ * HIGHLIGHT
+ // STRIKEOUT
+*/
