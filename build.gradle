@@ -16,3 +16,30 @@ tasks.register('helloV2') {
     }
 }
 
+// * EX3 - More Groovy
+tasks.register('counter') {
+    doLast {
+        int n = 10
+        n.times {print "$it "}
+    }
+}
+
+// * EX4 - Task Dependencies
+tasks.register('depend') {
+    dependsOn tasks.hello
+    doLast {
+        println "I'm Groovy"
+    }
+}
+
+// * EX5 - dependsOn Task B4 Registered
+tasks.register('super') {
+    dependsOn 'lazy' 
+    doLast {
+        print "I'm last"
+    }
+}
+
+tasks.register('lazy') {
+    println "I'm lazy task"
+}
